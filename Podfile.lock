@@ -1,0 +1,55 @@
+PODS:
+  - AFNetworking (4.0.0):
+    - AFNetworking/NSURLSession (= 4.0.0)
+    - AFNetworking/Reachability (= 4.0.0)
+    - AFNetworking/Security (= 4.0.0)
+    - AFNetworking/Serialization (= 4.0.0)
+    - AFNetworking/UIKit (= 4.0.0)
+  - AFNetworking/NSURLSession (4.0.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.0)
+  - AFNetworking/Security (4.0.0)
+  - AFNetworking/Serialization (4.0.0)
+  - AFNetworking/UIKit (4.0.0):
+    - AFNetworking/NSURLSession
+  - CJBaseHelper/UIViewControllerCJHelper (0.1.4)
+  - IQKeyboardManager (6.5.5)
+  - JCore (2.2.4)
+  - JPush (3.3.2):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - SVProgressHUD (2.2.5)
+  - TYAlertController (1.2.0)
+
+DEPENDENCIES:
+  - AFNetworking (= 4.0.0)
+  - CJBaseHelper/UIViewControllerCJHelper
+  - IQKeyboardManager (= 6.5.5)
+  - JCore (= 2.2.4)
+  - JPush (= 3.3.2)
+  - SVProgressHUD
+  - TYAlertController
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - CJBaseHelper
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - SVProgressHUD
+    - TYAlertController
+
+SPEC CHECKSUMS:
+  AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
+  CJBaseHelper: dd715e18591da9df5d06364098300591220f0535
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  JCore: b007693f7ac4d12d5c77861660a4184522454eb1
+  JPush: 9468c84a3809dc3ac2fc1c89c6d1d6c858a91bf5
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
+
+PODFILE CHECKSUM: 59e17f5b14a5afb224a14c3da148c1d0031dfa2c
+
+COCOAPODS: 1.8.4

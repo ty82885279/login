@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsb-CG-Ogc">
+                    <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="GgG-NW-Jow"/>
+                        <constraint firstAttribute="width" constant="42" id="KSq-en-FcE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是首页" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExM-DP-7xn">
+                    <rect key="frame" x="125.5" y="310" width="163" height="84"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="163" id="IQF-dK-BjX"/>
+                        <constraint firstAttribute="height" constant="84" id="kHi-hf-eRA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAB-Gb-HXE">
+                    <rect key="frame" x="144" y="484" width="126" height="64"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="ELh-Kd-Pid"/>
+                        <constraint firstAttribute="width" constant="126" id="xmO-jB-CAZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="发布按钮">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="post:" destination="-1" eventType="touchUpInside" id="I7X-Mk-0CF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="1" green="0.72476351525879223" blue="0.84962329364600453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QAB-Gb-HXE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ba3-PJ-iXq"/>
+                <constraint firstItem="QAB-Gb-HXE" firstAttribute="top" secondItem="Xsb-CG-Ogc" secondAttribute="bottom" constant="25.5" id="RFL-DQ-SXK"/>
+                <constraint firstItem="ExM-DP-7xn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="abx-T2-LW3"/>
+                <constraint firstItem="Xsb-CG-Ogc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cuG-0D-14a"/>
+                <constraint firstItem="Xsb-CG-Ogc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="flh-YX-M1B"/>
+                <constraint firstItem="Xsb-CG-Ogc" firstAttribute="top" secondItem="ExM-DP-7xn" secondAttribute="bottom" constant="43.5" id="js0-wZ-jhz"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="71.651785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

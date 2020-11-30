@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPz-Y4-NW0">
+                                <rect key="frame" x="131.5" y="315" width="151" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="R5H-Ou-CpL"/>
+                                    <constraint firstAttribute="height" constant="68" id="gf9-qu-E20"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="退出登录">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJF-XA-NeB"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rD6-XY-wlH">
+                                <rect key="frame" x="131.5" y="414" width="151" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="cpE-gb-6KD"/>
+                                    <constraint firstAttribute="height" constant="68" id="nCo-Gv-sjV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Di-lV-3r1">
+                                <rect key="frame" x="131.5" y="504" width="151" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="XnQ-kT-yei"/>
+                                    <constraint firstAttribute="height" constant="68" id="lky-RP-tg0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="退出登陆">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人中心" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh2-Qz-xqW">
+                                <rect key="frame" x="156.5" y="238" width="101.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101.5" id="2fB-Av-vbB"/>
+                                    <constraint firstAttribute="height" constant="21" id="Xd0-3R-llF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="rD6-XY-wlH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Ky-4V-GbJ"/>
+                            <constraint firstItem="1Di-lV-3r1" firstAttribute="top" secondItem="rD6-XY-wlH" secondAttribute="bottom" constant="22" id="MJh-uf-WzB"/>
+                            <constraint firstItem="lh2-Qz-xqW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QxG-bz-Og0"/>
+                            <constraint firstItem="jPz-Y4-NW0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UBz-VO-HxW"/>
+                            <constraint firstItem="1Di-lV-3r1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UqU-Gp-NB6"/>
+                            <constraint firstItem="jPz-Y4-NW0" firstAttribute="top" secondItem="lh2-Qz-xqW" secondAttribute="bottom" constant="56" id="YA6-1h-CVg"/>
+                            <constraint firstItem="rD6-XY-wlH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zAT-YS-0zR"/>
+                            <constraint firstItem="rD6-XY-wlH" firstAttribute="top" secondItem="jPz-Y4-NW0" secondAttribute="bottom" constant="31" id="zYM-BM-2NA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
